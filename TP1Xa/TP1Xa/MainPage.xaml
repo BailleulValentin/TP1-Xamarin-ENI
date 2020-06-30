@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TP1Xa.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <ContentView BackgroundColor="#58B0F0">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
+                    <ContentView Margin="10" WidthRequest="75" HeightRequest="75" BackgroundColor="GreenYellow"></ContentView>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Jeremy" TextColor="Black"></Label>
+                            <Label Text="Posté il y a 2h" TextColor="Black" HorizontalOptions="EndAndExpand"></Label>
+                        </StackLayout>
+                        <Label Text="Profil : Jeremy 34ans Développeur, j'aime sortir boire un verre alors n'hésite pas !" TextColor="Black"></Label>
+                    </StackLayout>
+                </StackLayout>
+                <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
+                                <Label Text="Ici, je raconte ma vie dans un tweet" TextColor="Black"></Label>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label HorizontalOptions="FillAndExpand" Text="Répondre" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                                <Label HorizontalOptions="FillAndExpand" Text="Retweet" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                                <Label HorizontalOptions="FillAndExpand" Text="Favoris" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                            </StackLayout>
+                            <ContentView HeightRequest="0.5" BackgroundColor="WhiteSmoke" HorizontalOptions="FillAndExpand"></ContentView>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </ContentView>
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></ScrollView>
+    </StackLayout>
+</ContentPage>
+
+    
